@@ -1,0 +1,38 @@
+{
+  "candidate_pair": "IWM-QQQ",
+  "selection_method": "Lowest Engle-Granger cointegration p-value among all pairs, calculated on the complete training period",
+  "training_cointegration_pvalue": 0.18281469074490997,
+  "training_rows": 2072,
+  "test_rows": 888,
+  "test_start": "2023-03-28",
+  "test_end": "2026-10-09",
+  "warmup_observations": 60,
+  "hedge_ratio": 0.5052583793833705,
+  "intercept": 2.316429034850283,
+  "entry_z": 2.0,
+  "exit_z": 0.5,
+  "lookback": 60,
+  "transaction_cost_bps_per_unit_turnover": 5.0,
+  "strategy_test_metrics": {
+    "total_return": -0.03355432875536468,
+    "cagr": -0.009638841217391891,
+    "annualised_volatility": 0.053423427475644776,
+    "sharpe_ratio": -0.15464646145811917,
+    "max_drawdown": -0.05710786620711206
+  },
+  "equal_weight_buy_and_hold_test_metrics": {
+    "total_return": 1.0661846551688212,
+    "cagr": 0.2286831112867902,
+    "annualised_volatility": 0.1861948853733146,
+    "sharpe_ratio": 1.1992422564361207,
+    "max_drawdown": -0.23708056477786654
+  },
+  "caveats": [
+    "Exploratory research, not a deployable trading strategy.",
+    "Selecting the lowest p-value across multiple pairs introduces selection bias.",
+    "The selected pair may not be cointegrated out of sample.",
+    "The long-only benchmark is not risk-matched to the dollar-neutral strategy.",
+    "Transaction costs exclude market impact, borrow fees and financing costs.",
+    "Dollar-neutral weights do not guarantee beta neutrality."
+  ]
+}
